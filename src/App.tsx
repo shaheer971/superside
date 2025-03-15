@@ -121,7 +121,7 @@ function App() {
   return (
     <div className="min-h-screen bg-background">
       {/* Floating Navbar */}
-      <div className="fixed w-full z-50 flex justify-center top-6">
+      <div className="fixed w-full z-50 flex justify-center top-2">
         <nav className={`mx-4 transition-all duration-300 max-w-6xl w-full rounded-full ${
           isScrolled ? 'py-2 px-6 floating-navbar bg-background/80 border shadow-sm' : 'py-4 px-8'
         }`}>
@@ -172,7 +172,7 @@ function App() {
       <section className="pt-32 pb-20 md:pt-40 md:pb-32 hero-blur overflow-hidden relative">
         <div className="absolute inset-0 z-0">
           <img src="/hero.png" alt="Hero Background" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-background/40 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-background/40 "></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div
