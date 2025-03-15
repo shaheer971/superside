@@ -123,7 +123,7 @@ function App() {
       {/* Floating Navbar */}
       <div className="fixed w-full z-50 flex justify-center top-6">
         <nav className={`mx-4 transition-all duration-300 max-w-6xl w-full rounded-full ${
-          isScrolled ? 'py-3 px-6 floating-navbar bg-background/80 border shadow-sm' : 'py-4 px-8'
+          isScrolled ? 'py-2 px-6 floating-navbar bg-background/80 border shadow-sm' : 'py-4 px-8'
         }`}>
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -144,7 +144,7 @@ function App() {
             </div>
 
             <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? <X className="w-6 h-4" /> : <Menu className="w-6 h-4" />}
             </button>
           </div>
         </nav>
@@ -187,7 +187,7 @@ function App() {
             </AnimatedShinyText>
           </div>
           <h1 
-            className={`text-4xl md:text-6xl font-bold mb-6 leading-tight px-4 md:px-8 ${
+            className={`text-4xl md:text-6xl font-bold mb-6 leading-tight px-4 md:px-80 ${
               isLoaded ? 'animate-fade-in animate-delay-2' : 'opacity-0'
             }`}
           >
