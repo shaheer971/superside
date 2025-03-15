@@ -8,11 +8,19 @@ export default {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       animation: {
         "shimmer-slide": "shimmer-slide var(--speed) ease-in-out infinite alternate",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         "shiny-text": "shiny-text 8s infinite",
+        "border-line": "border-line 2s ease-in-out infinite",
       },
       keyframes: {
         "spin-around": {
@@ -42,6 +50,18 @@ export default {
             "background-position": "calc(100% + var(--shiny-width)) 0",
           },
         },
+        "border-line": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" }
+        },
+        "slide-right": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" }
+        },
+        "slide-up": {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0)" }
+        }
       },
       borderRadius: {
         lg: 'var(--radius)',
